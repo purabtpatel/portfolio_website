@@ -1,0 +1,121 @@
+:root {
+  --default_dark: #0a1019;
+  --default_medium: #14202b;
+  --default_light: #263b50;
+
+
+  --primary_dark: #01080e;
+  --primary_medium: #011627;
+  --primary_light: #011221;
+
+
+  --secondary_gray: #607B96;
+  --secondary_cyan: #3c9d93;
+  --secondary_deep_blue: #4d5bce;
+  --secondary_white: #ffffff;
+  --transparent_white: rgba(255, 255, 255, 0.5);
+
+
+  --accent_orange: #ff9f56;
+  --accent_orange_light: #ffac6b;
+  --accent_turquoise: #43d9ad;
+  --accent_pink: #e99287;
+  --accent_purple: #c98bdf;
+
+  --lines: #1e2d3d;
+  --gradient_color_1: #4d5bce;
+  --gradient_color_2: #43d9ad;
+
+  font-family: Hack, monospace;
+  color: var(--secondary_white);
+
+}
+
+div{
+  background-color: var(--primary_medium);
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 62px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 32px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* div with elements spaced apart*/
+.spaced {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.primary_button {
+  background-color: var(--accent_orange);
+  color: var(--primary_dark);
+  border: none;
+  border-radius: 0.5em;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.primary_button:hover {
+  background-color: var(--accent_orange_light);
+}
+
+.default_button {
+  background-color: var(--default_medium);
+  color: var(--secondary_white);
+  border: none;
+  border-radius: 0.5em;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.default_button:hover {
+  background-color: var(--default_light);
+}
+
+.ghost_button {
+  background-color: transparent;
+  color: var(--secondary_white);
+  border: 1px solid var(--secondary_white);
+  border-radius: 0.5em;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* 50% border transparent */
+.ghost_button:hover {
+  border: 1px solid var(--transparent_white);
+}
+
+.link{
+  color: var(--secondary_white);
+  text-decoration: none;
+}
+.link:hover{
+  color: var(--accent_orange);
+}
+
+ul {
+  list-style-type: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 1rem 0 0 ;
+}
