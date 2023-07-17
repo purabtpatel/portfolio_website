@@ -27,6 +27,7 @@
   --gradient_color_2: #43d9ad;
 
   font-family: Hack, monospace;
+  font-size: 12px;
   color: var(--secondary_white);
 
 }
@@ -119,46 +120,89 @@ p {
   cursor: pointer;
 }
 
-/* 50% border transparent */
 .ghost_button:hover {
   border: 1px solid var(--transparent_white);
 }
 
-.link{
-  color: var(--secondary_gray);
-  text-decoration: none;
-}
 
-.link:hover{
-  color: var(--accent_orange);
-}
-
-p.link{
-  color: var(--secondary_gray);
-  text-decoration: none;
-}
-p.link:hover{
-  color: var(--secondary_gray);
-}
-
-nav{
-
-}
-
-ul {
+/*
+  Refactor for cleaner code: Section 1
+  navigation bar and footer bar styles
+*/
+.navbar {
   list-style-type: none;
-  margin: 1rem 0;
+  display: flex;
+  margin: 0;
   padding: 0;
 }
-li {
-  display: inline-block;
-  margin: 0 1rem 0 0 ;
+
+
+.name_nav{
+  color: var(--secondary_gray);
+  text-decoration: none;
+  width: 220px;
+  border-left: 1px solid var(--lines);
+  border-top: 1px solid var(--lines);
+  border-top-left-radius: 0.5em;
+  text-align: left;
+  padding: 10px 20px;
+}
+.name_nav:hover{
+
+  background-color: #1e2d3d74;
 }
 
 
-.header-underline {
+.link_nav{
+  color: var(--secondary_gray);
+  text-decoration: none;
+  width: 140px;
+  border-left: 1px solid var(--lines);
+  border-top: 1px solid var(--lines);
+  text-align: center;
+  padding: 10px 0;
+}
 
-  background-color: var(--lines);
-  width: 400px;
-  height: 3px;
+div.spacer{
+  width: 100vw;
+
+  border-top: 1px solid var(--lines);
+  border-right: 1px solid var(--lines);
+  border-left: 1px solid var(--lines);
+}
+
+.link_nav:hover{
+  color: var(--accent_orange);
+  background-color: #1e2d3d74;
+
+}
+
+
+.contact_nav{
+  color: var(--secondary_gray);
+  text-decoration: none;
+  width: 220px;
+  border-right: 1px solid var(--lines);
+  border-top: 1px solid var(--lines);
+  border-top-right-radius: 0.5em;
+  text-align: left;
+  padding: 10px 20px;
+}
+.contact_nav:hover{
+  color: var(--accent_orange);
+  background-color: #1e2d3d74;
+}
+
+/* end of refactor section 1*/
+
+
+
+
+
+
+
+
+.homebasic{
+  border: 1px solid var(--lines);
+  height: 87.5vh;
 }

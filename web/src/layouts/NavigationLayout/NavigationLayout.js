@@ -5,24 +5,15 @@ const NavigationLayout = ({ children }) => {
     <div className="header-background">
 
       <div className="main-background">
-        <nav>
-          <ul>
-            <li>
-              <p className='link'>purab_patel</p>
-            </li>
-            <li>
-              <Link to={routes.home()} className='link'>_hello</Link>
-            </li>
-            <li>
-              <Link to={routes.about()} className='link'>_about</Link>
-            </li>
-            <li>
-              <Link to={routes.projects()} className='link'>_projects</Link>
-            </li>
-          </ul>
-        </nav>
+        <div className='navbar'>
+          <Link to={routes.home()} className='name_nav'>purab-patel</Link>
+          <Link to={routes.home()} className='link_nav'>_hello</Link>
+          <Link to={routes.about()} className='link_nav'>_about</Link>
+          <Link to={routes.projects()} className='link_nav'>_projects</Link>
+          <div className='spacer'></div>
+          <Link to={routes.contact()} className='contact_nav'>_contact-me</Link>
+        </div>
 
-        <div className='header-underline'></div>
 
         <main>
           {children}
