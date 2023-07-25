@@ -37,7 +37,7 @@ body {
   padding: 0;
 }
 
-div .header-background{
+div .header-background {
   background-color: #010c15;
   width: 100vw;
   height: 100vh;
@@ -47,14 +47,19 @@ div .header-background{
   align-items: center;
 }
 
-div .main-background{
+div .main-background {
 
   border-radius: 0.5em;
   background-color: #011627;
-  border: 1px solid var(--color-darkslategray);
+  border: 1px solid var(--lines);
   box-sizing: border-box;
   width: 97.5%;
   height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
 
 }
 
@@ -74,10 +79,6 @@ p {
 }
 
 /* div with elements spaced apart*/
-.spaced {
-  display: flex;
-  justify-content: space-evenly;
-}
 
 .primary_button {
   background-color: var(--accent_orange);
@@ -133,65 +134,103 @@ p {
   list-style-type: none;
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 0 0;
+  border-bottom: 1px solid var(--lines);
+
 }
 
-
-.name_nav{
+.name_nav {
   color: var(--secondary_gray);
   text-decoration: none;
   width: 220px;
-  border-left: 1px solid var(--lines);
-  border-top: 1px solid var(--lines);
-  border-top-left-radius: 0.5em;
   text-align: left;
-  padding: 10px 20px;
+  padding: 15px 25px;
+  padding-right: 100px;
 }
-.name_nav:hover{
+
+.name_nav:hover {
 
   background-color: #1e2d3d74;
+
+  border-top-left-radius: 0.40em;
 }
 
 
-.link_nav{
+.link_nav {
   color: var(--secondary_gray);
   text-decoration: none;
   width: 140px;
   border-left: 1px solid var(--lines);
+  text-align: center;
+  padding: 15px 7px;
+}
+
+div.spacer {
+  width: 100vw;
+  border-left: 1px solid var(--lines);
+}
+
+.link_nav:hover {
+  color: var(--accent_orange);
+  background-color: #1e2d3d74;
+}
+
+
+.contact_nav {
+  color: var(--secondary_gray);
+  text-decoration: none;
+  width: 220px;
+  border-left: 1px solid var(--lines);
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.contact_nav:hover {
+  color: var(--accent_orange);
+  background-color: #1e2d3d74;
+  border-top-right-radius: .40em;
+}
+
+
+.footer {
   border-top: 1px solid var(--lines);
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+
+.link_footer{
+  color: var(--secondary_gray);
+  text-decoration: none;
+  width: 85px;
+  border-left: 1px solid var(--lines);
   text-align: center;
   padding: 10px 0;
 }
 
-div.spacer{
-  width: 100vw;
-
-  border-top: 1px solid var(--lines);
-  border-right: 1px solid var(--lines);
-  border-left: 1px solid var(--lines);
+.link_footer path {
+  fill: #253d57
 }
-
-.link_nav:hover{
-  color: var(--accent_orange);
+.link_footer:hover{
   background-color: #1e2d3d74;
-
+}
+.link_footer:hover path {
+  fill: var(--accent_orange);
 }
 
-
-.contact_nav{
+span.footer_text {
   color: var(--secondary_gray);
-  text-decoration: none;
-  width: 220px;
-  border-right: 1px solid var(--lines);
-  border-top: 1px solid var(--lines);
-  border-top-right-radius: 0.5em;
-  text-align: left;
-  padding: 10px 20px;
+  align-items: center;
+  color: #607b96;
+  display: flex;
+  font-size: 13px;
+  justify-content: center;
+  line-height: 19.5px;
+  padding: 0px 20px;
+  width: 150px;
 }
-.contact_nav:hover{
-  color: var(--accent_orange);
-  background-color: #1e2d3d74;
-}
+
 
 /* end of refactor section 1*/
 
@@ -202,7 +241,8 @@ div.spacer{
 
 
 
-.homebasic{
-  border: 1px solid var(--lines);
-  height: 87.5vh;
+/* homebasic should stretch down to footer */
+.homebasic {
+  height: 100%;
+
 }

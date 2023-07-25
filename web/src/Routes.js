@@ -13,14 +13,10 @@ import NavigationLayout from './layouts/NavigationLayout/NavigationLayout'
 const Routes = () => {
   return (
     <Router>
-
-
-      <Route path="/contact" page={ContactPage} name="contact" />
-
-
       <Set wrap={NavigationLayout}>
         <Route path="/" page={HomePage} name="home" />
         <Route path="/about" page={AboutPage} name="about" />
+        <Route path="/contact" page={ContactPage} name="contact" />
         <Route path="/projects" page={ProjectsPage} name="projects" />
         <Route path="/styles" page={StylesPage} name="styles" />
         <Route path="/stylespage" page={StylesPage} name="stylespage" />
