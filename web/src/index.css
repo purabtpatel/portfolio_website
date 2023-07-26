@@ -1,0 +1,248 @@
+:root {
+  --default_dark: #0a1019;
+  --default_medium: #14202b;
+  --default_light: #263b50;
+
+
+  --primary_dark: #01080e;
+  --primary_medium: #011627;
+  --primary_light: #011221;
+
+
+  --secondary_gray: #607B96;
+  --secondary_cyan: #3c9d93;
+  --secondary_deep_blue: #4d5bce;
+  --secondary_white: #ffffff;
+  --transparent_white: rgba(255, 255, 255, 0.5);
+
+
+  --accent_orange: #ff9f56;
+  --accent_orange_light: #ffac6b;
+  --accent_turquoise: #43d9ad;
+  --accent_pink: #e99287;
+  --accent_purple: #c98bdf;
+
+  --lines: #1e2d3d;
+  --gradient_color_1: #4d5bce;
+  --gradient_color_2: #43d9ad;
+
+  font-family: Hack, monospace;
+  font-size: 12px;
+  color: var(--secondary_white);
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div .header-background {
+  background-color: #010c15;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div .main-background {
+
+  border-radius: 0.5em;
+  background-color: #011627;
+  border: 1px solid var(--lines);
+  box-sizing: border-box;
+  width: 97.5%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 62px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 32px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* div with elements spaced apart*/
+
+.primary_button {
+  background-color: var(--accent_orange);
+  color: var(--primary_dark);
+  border: none;
+  border-radius: 0.5em;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.primary_button:hover {
+  background-color: var(--accent_orange_light);
+}
+
+.default_button {
+  background-color: var(--default_medium);
+  color: var(--secondary_white);
+  border: none;
+  border-radius: 0.5em;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.default_button:hover {
+  background-color: var(--default_light);
+}
+
+.ghost_button {
+  background-color: transparent;
+  color: var(--secondary_white);
+  border: 1px solid var(--secondary_white);
+  border-radius: 0.5em;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.ghost_button:hover {
+  border: 1px solid var(--transparent_white);
+}
+
+
+/*
+  Refactor for cleaner code: Section 1
+  navigation bar and footer bar styles
+*/
+.navbar {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0 0;
+  border-bottom: 1px solid var(--lines);
+
+}
+
+.name_nav {
+  color: var(--secondary_gray);
+  text-decoration: none;
+  width: 220px;
+  text-align: left;
+  padding: 15px 25px;
+  padding-right: 100px;
+}
+
+.name_nav:hover {
+
+  background-color: #1e2d3d74;
+
+  border-top-left-radius: 0.40em;
+}
+
+
+.link_nav {
+  color: var(--secondary_gray);
+  text-decoration: none;
+  width: 140px;
+  border-left: 1px solid var(--lines);
+  text-align: center;
+  padding: 15px 7px;
+}
+
+div.spacer {
+  width: 100vw;
+  border-left: 1px solid var(--lines);
+}
+
+.link_nav:hover {
+  color: var(--accent_orange);
+  background-color: #1e2d3d74;
+}
+
+
+.contact_nav {
+  color: var(--secondary_gray);
+  text-decoration: none;
+  width: 220px;
+  border-left: 1px solid var(--lines);
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.contact_nav:hover {
+  color: var(--accent_orange);
+  background-color: #1e2d3d74;
+  border-top-right-radius: .40em;
+}
+
+
+.footer {
+  border-top: 1px solid var(--lines);
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+
+.link_footer{
+  color: var(--secondary_gray);
+  text-decoration: none;
+  width: 85px;
+  border-left: 1px solid var(--lines);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.link_footer path {
+  fill: #253d57
+}
+.link_footer:hover{
+  background-color: #1e2d3d74;
+}
+.link_footer:hover path {
+  fill: var(--accent_orange);
+}
+
+span.footer_text {
+  color: var(--secondary_gray);
+  align-items: center;
+  color: #607b96;
+  display: flex;
+  font-size: 13px;
+  justify-content: center;
+  line-height: 19.5px;
+  padding: 0px 20px;
+  width: 150px;
+}
+
+
+/* end of refactor section 1*/
+
+
+
+
+
+
+
+
+/* homebasic should stretch down to footer */
+.homebasic {
+  height: 100%;
+
+}
