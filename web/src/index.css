@@ -29,7 +29,6 @@
   font-family: Hack, monospace;
   font-size: 12px;
   color: var(--secondary_white);
-
 }
 
 body {
@@ -53,8 +52,8 @@ div .main-background {
   background-color: #011627;
   border: 1px solid var(--lines);
   box-sizing: border-box;
-  width: 97.5%;
-  height: 95%;
+  width: 96.5%;
+  height: 93.5%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -164,6 +163,9 @@ p {
   text-align: center;
   padding: 15px 7px;
 }
+.active_link_nav{
+  border-bottom: var(--accent_orange) 2px solid;
+}
 
 div.spacer {
   width: 100vw;
@@ -243,6 +245,54 @@ span.footer_text {
 
 /* homebasic should stretch down to footer */
 .homebasic {
-  height: 100%;
+    display: flex;
+    line-height: 24px;
+    padding: 0px 0px 0px 275px;
 
+}
+
+.css-blurry-gradient-blue, .css-blurry-gradient-green {
+  filter: blur(70px);
+    height: 300px;
+    opacity: .5;
+    width: 350px;
+    z-index: 10;
+}
+.css-blurry-gradient-blue + .css-blurry-gradient-green {
+
+}
+.css-blurry-gradient-blue:hover .css-blurry-gradient-green:hover{
+  pointer-events: none;
+}
+
+.css-blurry-gradient-blue {
+  background: radial-gradient(circle at 50% 50%,#4d5bce,rgba(76,0,255,0));
+    border-radius: 0 0 50% 50%;
+    bottom: 25%;
+    position: fixed;
+    right: 15%;
+    rotate: 10deg;
+}
+
+.css-blurry-gradient-green {
+  background: radial-gradient(circle at 50% 50%,#43d9ad,rgba(76,0,255,0));
+  border-radius: 0 50%;
+  position: absolute;
+  right: 40%;
+  top: 20%;
+}
+
+.home-text-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 24px;
+}
+
+.head{
+
+}
+
+.gradient-blue{
+  color: var(--gradient_color_1);
 }
