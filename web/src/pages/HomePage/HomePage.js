@@ -4,18 +4,23 @@ import { MetaTags } from '@redwoodjs/web'
 const HomePage = () => {
   return (
     <>
+      <MetaTags title="Home" description="Home page" />
+      <div className='css-blurry-gradient-blue'></div>
+      <div className='css-blurry-gradient-green'></div>
       <div className='homebasic'>
+        <div classname='home-text-section'>
+          <div className='head'>
+            <span>Hi, I am</span>
+            <h1>Purab Patel</h1>
+            {/*add cmd svg here instead of greater than sign*/}
+            <h2 className='gradient-blue'>&gt; Fullstack Developer</h2>
+          </div>
+          <div className='home-info'>
 
-        <MetaTags title="Home" description="Home page" />
+          </div>
+        </div>
 
-        <h1>HomePage</h1>
-        <p>
-          Find me in <code>./web/src/pages/HomePage/HomePage.js</code>
-        </p>
-        <p>
-          My default route is named <code>home</code>, link to me with `
-          <Link to={routes.home()}>Home</Link>`
-        </p>
+
       </div>
     </>
   )
