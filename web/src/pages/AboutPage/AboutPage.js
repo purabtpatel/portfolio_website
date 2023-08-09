@@ -9,7 +9,6 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-
 const AboutPage = () => {
   const [menu, setMenu] = useState('professional_info');
   const [visible, setVisible] = useState(["icon_active", "icon", "icon"]);

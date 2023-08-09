@@ -57,7 +57,7 @@ div .main-background {
   height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  position:relative;
   overflow: hidden;
 }
 
@@ -187,6 +187,7 @@ div.spacer {
   border-left: 1px solid var(--lines);
   text-align: left;
   padding: 10px 20px;
+  white-space: nowrap;
 }
 
 .contact_nav:hover {
@@ -198,44 +199,20 @@ div.spacer {
 
 .footer {
   border-top: 1px solid var(--lines);
+  list-style-type: none;
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 0 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
 }
 
 
-.link_footer{
-  color: var(--secondary_gray);
-  display: flex;
-  text-decoration: none;
-  width: auto;
+div.footer_spacer {
+  width:100%;
   border-left: 1px solid var(--lines);
-  text-align: center;
-  justify-content: center;
-  white-space: nowrap;
-  padding: 0px 5px;
-
-}
-p.link_footer{
-  font-size: small;
-  padding-left: 10px;
-  padding-right: 0px;
-  border-left: 0px;
-}
-a.link_footer svg {
-
-
-  width: auto;
-
-  text-align: center;
-  justify-content: center;
-  white-space: nowrap;
-  padding: 8px 10px;
-}
-
-
-.link_footer path {
-  fill: #253d57
 }
 
 .link_footer:hover {
@@ -248,14 +225,34 @@ a.link_footer svg {
 
 span.footer_text {
   color: var(--secondary_gray);
-  align-items: center;
-  color: #607b96;
-  display: flex;
-  font-size: 13px;
-  justify-content: center;
-  padding: 10px 10px;
-  white-space: nowrap;
+  text-decoration: none;
   width: auto;
+  white-space: nowrap;
+  text-align: center;
+  justify-content: center;
+  padding: 15px 20px;
+
+
+}
+
+.footer_linkedIn{
+  color: var(--secondary_gray);
+  text-decoration: none;
+
+  border-left: 1px solid var(--lines);
+  width: auto;
+  white-space: nowrap;
+  padding: 10px 20px;
+}
+.footer_github{
+  color: var(--secondary_gray);
+  text-decoration: none;
+  width: auto;
+  white-space: nowrap;
+  border-left: 1px solid var(--lines);
+  text-align: right;
+  justify-content: center;
+  padding: 5px 20px;
 }
 
 
@@ -320,8 +317,6 @@ span.footer_text {
 .about-page {
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  height: 90vh;
 }
 
 .gradient-blue {
